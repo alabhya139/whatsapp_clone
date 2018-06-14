@@ -2,46 +2,25 @@
 @import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
-body{
+body,html{
     background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     background-repeat: no-repeat;
     background-size: auto;
     overflow-x: hidden;
     padding: 0;
     margin: 0;
+    height: 100%;
 }
+
 
 div{
     overflow-x: hidden;
 }
 
-.nav-custom{
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-
-.nav-custom .navbar-brand{
-    color: white;
-}
-
-.nav-custom .navbar-nav .nav-link {
-    color: white;
-    text-align: right;
-}
-
-#toggle-button {
-    border: none;
-}
-.nav-item:hover{
-    background: #87a5f5;
-}
-
-.nav-item{
-    text-align: center;
-    margin: 0;
-}
-
-.navbar-light .navbar-bg{
-    color: white;
+.chat-bar{
+    background-color: #DCD9D4; 
+ background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%); 
+ background-blend-mode: soft-light,screen;
 }
 
 .contact-name{
@@ -50,7 +29,7 @@ div{
     margin-bottom: auto;
 }
 
-.chat{
+.chat-preview{
     font-size: 0.8em;
     margin-top: auto;
     margin-bottom: auto;
@@ -63,7 +42,10 @@ div{
 .no-gutter{
     padding: 0;
     margin: 0;
+}
 
+.side-bar{
+    height: 90vh;
 }
 
 .chat-messages{
@@ -84,7 +66,13 @@ div{
     margin-bottom: auto;
 }
 
+.chat-messages:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
 .nav-row{
+    height: 10vh;
     padding:0;
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
@@ -102,8 +90,8 @@ div{
     padding: 8px;
 }
 
-.custom-hover:hover{
-    background-color: #764ba2;
+.custom-hover a:active{
+    border-bottom: 2px solid white;
 }
 
 .custom-hover{
@@ -122,10 +110,6 @@ div{
     margin-top: 4px;
 }
 
-.chat-bar{
-    padding: 0;
-    height: 100vh;
-}
 
 .chat-image{
     display: block;
@@ -134,3 +118,125 @@ div{
     opacity: 0.5;
     width: 50%;
 }
+
+.chat-contact-panel{
+    background: #667eea;
+    color: white;
+    align-self: baseline;
+}
+
+.chat{
+    padding: 16px;
+    display: flex;
+}
+
+.contact-dp{
+    width: 45px;
+    height: 45px;
+    background: #00a1c9;
+    border-radius: 50%;
+}
+
+.message{
+    width: 80%;
+    padding: 16px;
+    margin: 5px 10px 0;
+    background: #001faa;
+    border-radius: 10px;
+    color: white;
+}
+
+.recieved .message{
+    background-color: #622494;
+}
+
+.sent .message{
+    background-color: #1a234b;
+    order: -1;
+}
+
+.chat-display::-webkit-scrollbar{
+    width: 10px;
+}
+.chat-display::-webkit-scrollbar-thumb{
+    background: #117c7c;
+    border-radius: 5px;
+}
+
+.nav-item{
+    text-align: center;
+}
+
+.navbar-brand{
+    padding: 8px;
+}
+
+.nav-item:hover{
+    color: white;
+}
+
+.navbar-toggler{
+    border:none;
+}
+
+.navbar-toggler:focus{
+    outline: none;
+}
+
+.navbar{
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+.info{
+    color: white;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    padding: 0;
+    margin: 0;
+}
+
+.contanr{
+    position: relative;
+    height: 100vh;
+}
+
+.chat-box{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 8px;
+    background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+    background-blend-mode: screen;
+  }
+  textarea{
+      border-color: white;
+      border-radius: 20px;
+      resize: none;
+      color: gray;
+      width: 70%;
+      padding: 8px;
+  }
+
+  textarea:focus{
+      outline: none;
+  }
+
+  .chat-area{
+      position: relative;
+    height: 80%;
+  }
+
+  .button{
+    border-radius: 10px;
+    padding: 8px 16px 8px 16px;
+    color: white;
+    background: #10b62c;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 16px;
+  }
+
+  .button:hover{
+    opacity: 0.7;
+    cursor: pointer;
+  }
