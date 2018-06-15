@@ -9,65 +9,272 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
   <title>WhatsApp</title>
 </head>
 
 <body>
 
-  <div class="height container-fluid no-gutter">
+  <!--Left-Side Bar-->
+
+  <div class=" left-sidebar container-fluid no-gutter">
     <div class="row">
       <!--Chat Bar-->
       <div id="chatbar" style="height: 100vh;" class="no-gutter chat-bar col-12 col-md-6 col-lg-5 col-xl-4">
 
         <!--Nav Bar-->
         <nav class="navbar navbar-expand-xs navbar-dark bg-dark">
-          <a class="navbar-brand" href="#">WhatsApp</a>
+          <a class="navbar-brand" href="#">
+            <strong>WhatsApp</strong>
+          </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a id="homes" class="nav-item nav-link" href="#">HOME</a>
-              <a id="profiles" class="nav-item nav-link" href="#">PROFILE</a>
-              <a id="chats" class="nav-item nav-link" href="#">CHATS</a>
-              <a id="contacts"class="nav-item nav-link" href="#">CONTACTS</a>
+              <a id="homes" class="nav-item nav-link" href="#">
+                <strong>HOME</strong>
+              </a>
+              <a id="profiles" class="nav-item nav-link" href="#">
+                <strong>PROFILE</strong>
+              </a>
+              <a id="chats" class="nav-item nav-link" href="#">
+                <strong>CHATS</strong>
+              </a>
+              <a id="contacts" class="nav-item nav-link" href="#">
+                <strong>CONTACTS</strong>
+              </a>
             </div>
           </div>
         </nav>
-        <!--Home Page-->
-        <div id="home" class="text-center home-page container-fluid">
-            <div class="row">
-              USE 
-              
+
+        <!--Contact Page-->
+        <div id="contact-boxes" class="container-fluid no-gutter" style="">
+          <div class="chat-messages row">
+            <div class="col-3 col-sm-2">
+              <div class="contact-dp"></div>
+            </div>
+            <div class="contact-msg col-9 col-sm-10">
+              <div class="row">
+                <div class="col-8">
+                  <p class="contact-name">
+                    <strong>Contact Name</strong>
+                  </p>
+                </div>
+                <div class=" time-stamp col-4">
+                  <p class="contact-name">6:10 PM</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <p style="color: gray" ;="" class="chat-preview">Chat Preview</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="chat-messages row">
+            <div class="col-3 col-sm-2">
+              <div class="contact-dp"></div>
+            </div>
+            <div class="contact-msg col-9 col-sm-10">
+              <div class="row">
+                <div class="col-8">
+                  <p class="contact-name">
+                    <strong>Contact Name</strong>
+                  </p>
+                </div>
+                <div class=" time-stamp col-4">
+                  <p class="contact-name">6:10 PM</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <p style="color: gray" ;="" class="chat-preview">Chat Preview...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="chat-messages row">
+            <div class="col-3 col-sm-2">
+              <div class="contact-dp"></div>
+            </div>
+            <div class="contact-msg col-9 col-sm-10">
+              <div class="row">
+                <div class="col-8">
+                  <p class="contact-name">
+                    <strong>Contact Name</strong>
+                  </p>
+                </div>
+                <div class=" time-stamp col-4">
+                  <p class="contact-name">6:10 PM</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <p style="color: gray" ;="" class="chat-preview">Chat Preview</p>
+                </div>
+              </div>
             </div>
           </div>
 
-        <!--Profile Page-->
-        <div id="#profil" style="padding-right: 0;"class="profile container-fluid">
-            <div style="position:relative;padding-top:40px;">
-                <img src="image/whatsapp-dp.png" class=" mx-auto d-block" style="border-radius: 50%; height:180px;" alt="">
-                <div class="" style="border-radius: 50%;height:50px;width:50px;background-color:#128C7E;position:absolute;bottom:0px;left:59%;cursor:pointer">
-                  <i class="fas fa-camera" style="font-size:24px;position:relative;top:26%;left:25%;color:white;"></i>
+          <hr>
+
+          <div class="chat-messages row">
+            <div class="col-3 col-sm-2">
+              <div class="contact-dp"></div>
+            </div>
+            <div class="contact-msg col-9 col-sm-10">
+              <div class="row">
+                <div class="col-8">
+                  <p class="contact-name">
+                    <strong>Contact Name</strong>
+                  </p>
                 </div>
-      
+                <div class=" time-stamp col-4">
+                  <p class="contact-name">6:10 PM</p>
+                </div>
               </div>
+              <div class="row">
+                <div class="col-12">
+                  <p style="color: gray" ;="" class="chat-preview">Chat Preview</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="chat-messages row">
+            <div class="col-3 col-sm-2">
+              <div class="contact-dp"></div>
+            </div>
+            <div class="contact-msg col-9 col-sm-10">
+              <div class="row">
+                <div class="col-8">
+                  <p class="contact-name">
+                    <strong>Contact Name</strong>
+                  </p>
+                </div>
+                <div class=" time-stamp col-4">
+                  <p class="contact-name">6:10 PM</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <p style="color: gray" ;="" class="chat-preview">Chat Preview</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="chat-messages row">
+            <div class="col-3 col-sm-2">
+              <div class="contact-dp"></div>
+            </div>
+            <div class="contact-msg col-9 col-sm-10">
+              <div class="row">
+                <div class="col-8">
+                  <p class="contact-name">
+                    <strong>Contact Name</strong>
+                  </p>
+                </div>
+                <div class=" time-stamp col-4">
+                  <p class="contact-name">6:10 PM</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <p style="color: gray" ;="" class="chat-preview">Chat Preview</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="chat-messages row">
+            <div class="col-3 col-sm-2">
+              <div class="contact-dp"></div>
+            </div>
+            <div class="contact-msg col-9 col-sm-10">
+              <div class="row">
+                <div class="col-8">
+                  <p class="contact-name">
+                    <strong>Contact Name</strong>
+                  </p>
+                </div>
+                <div class=" time-stamp col-4">
+                  <p class="contact-name">6:10 PM</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <p style="color: gray" ;="" class="chat-preview">Chat Preview
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="lower-ruler">
+
+        </div>
+
+        <!--Home Page-->
+        <div id="home" style="margin-top: 2em;" class="home-page container-fluid">
+          <div style="box-shadow: 0px 1px 2px #888, 0px -1px 2px #888; padding: 0.5em; margin-top:2em; background:rgb(247, 206, 156);font-size:1.5em; font-family: Helvetica, Arial, sans-serif; color:rgb(20, 20, 48);font-size:  1.4em;"
+            class="my-auto row">
+            <p class="msg text-center">
+              <strong>Welcome to WhatsApp Clone</strong>
+            </p>
+            <br>
+            <p style="color: rgb(59, 59, 59);" class="msg text-center">Use Navigation Bar to explore different section!</p>
+          </div>
+        </div>
+
+        <!--Profile Page-->
+        <div id="#profil" style="padding-right: 0;" class="profile container-fluid">
+          <div style="position:relative;padding-top:40px;">
+            <img src="image/whatsapp-dp.png" class=" mx-auto d-block" style="border-radius: 50%; height:180px;" alt="">
+            <div class="" style="border-radius: 50%;height:50px;width:50px;background-color:#128C7E;position:absolute;bottom:0px;left:59%;cursor:pointer">
+              <i class="fas fa-camera" style="font-size:24px;position:relative;top:26%;left:25%;color:white;"></i>
+            </div>
+
+          </div>
 
           <div style="box-shadow: 0px 0.5px 1px #888, 0px -0.5px 1px #888; background: white; margin-top: 40px" class=" d-flex flex-row justify-content-between">
-            <p style="padding: 16px 8px 0 8px;">Alabhya Pandey</p>
+            <p style="padding: 16px 8px 0 8px;">
+              <strong>Alabhya Pandey</strong>
+            </p>
             <i style="cursor: pointer; padding: 16px 16px 0 0;" class=" fas fa-edit"></i>
           </div>
 
-          <p style="color: gray; font-size: 0.8em; padding: 16px; margin-bottom: 0;">This is not your username or pin. This name will be visible to your WhatsApp contacts.</p>
+          <p style="color: gray; font-size: 0.8em; padding: 16px; margin-bottom: 0;">
+            <strong>This is not your username or pin. This name will be visible to your WhatsApp contacts.</strong>
+          </p>
 
           <div style=" font-style: strong; background: white;" class=" d-flex flex-column justify-content-between">
-              <p style=" color:#075e54; padding: 16px 8px 0 8px;">About and phone number</p>
-              <p style="padding:8px; font-size: 0.9em;">Hey I'm using WhatsApp!</p>
+            <p style=" color:#075e54; padding: 16px 8px 0 8px;">
+              <strong>About and phone number</strong>
+            </p>
+            <p style="padding:8px; font-size: 0.9em;">
+              <strong>Hey I'm using WhatsApp!</strong>
+            </p>
           </div>
           <div style="box-shadow: 0px 0.5px 1px #888, 0px -0.5px 1px #888; background: white">
-            <p style="padding: 8px;">+91 90000 99999</p>
+            <p style="padding: 8px;">
+              <strong>+91 90000 99999</strong>
+            </p>
           </div>
         </div>
 
@@ -80,7 +287,9 @@
             <div class="contact-msg col-9 col-sm-10">
               <div class="row">
                 <div class="col-8">
-                  <p class="contact-name">Contact Name</p>
+                  <p class="contact-name">
+                    <strong>Contact Name</strong>
+                  </p>
                 </div>
                 <div class=" time-stamp col-4">
                   <p class="contact-name">6:10 PM</p>
@@ -102,7 +311,9 @@
             <div class="contact-msg col-9 col-sm-10">
               <div class="row">
                 <div class="col-8">
-                  <p class="contact-name">Contact Name</p>
+                  <p class="contact-name">
+                    <strong>Contact Name</strong>
+                  </p>
                 </div>
                 <div class=" time-stamp col-4">
                   <p class="contact-name">6:10 PM</p>
@@ -126,7 +337,35 @@
             <div class="contact-msg col-9 col-sm-10">
               <div class="row">
                 <div class="col-8">
-                  <p class="contact-name">Contact Name</p>
+                  <p class="contact-name">
+                    <strong>Group Name</strong>
+                  </p>
+                </div>
+                <div class=" time-stamp col-4">
+                  <p class="contact-name">6:10 PM</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <p style="color: gray" ; class="chat-preview">Chat Preview...
+                    <span class="badge badge-pill badge-danger">15</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="chat-messages row">
+            <div class="col-3 col-sm-2">
+              <div class="contact-dp"></div>
+            </div>
+            <div class="contact-msg col-9 col-sm-10">
+              <div class="row">
+                <div class="col-8">
+                  <p class="contact-name">
+                    <strong>Contact Name</strong>
+                  </p>
                 </div>
                 <div class=" time-stamp col-4">
                   <p class="contact-name">6:10 PM</p>
@@ -149,7 +388,9 @@
             <div class="contact-msg col-9 col-sm-10">
               <div class="row">
                 <div class="col-8">
-                  <p class="contact-name">Contact Name</p>
+                  <p class="contact-name">
+                    <strong>Contact Name</strong>
+                  </p>
                 </div>
                 <div class=" time-stamp col-4">
                   <p class="contact-name">6:10 PM</p>
@@ -171,13 +412,18 @@
       </div>
 
       <!--Side Bar-->
-      <div id="sidebar-container1"class="contanr no-gutter side-bar col-0 col-md-6 col-lg-7 col-xl-8">
+      <div id="sidebar-container1" class="contanr no-gutter side-bar col-0 col-md-6 col-lg-7 col-xl-8">
 
-        <div id="sidebar-header1"class="no-gutter ">
-          <div style="padding: 8px 8px 9px 8px;" class="chat info d-flex flex-row">
-            <i id="back-button" style="padding: 16px 8px;"class="backbtn fas fa-arrow-left"></i>
+        <div id="sidebar-header1" class="no-gutter ">
+          <div style="padding: 8px 8px 6px 8px;" class="chat info d-flex flex-row">
+            <i id="back-button" style="padding: 16px 8px;" class="backbtn fas fa-arrow-left"></i>
             <div class="contact-dp"></div>
-            <p style="padding-left: 8px;">Contact Name</p>
+            <p style="padding-left: 8px; margin-bottom: 0;">
+              <strong>Contact Name
+                <br>
+                <span style="font-weight: normal; font-size: 0.7em;">last seen today at 12:16 PM</span>
+              </strong>
+            </p>
           </div>
         </div>
 
@@ -224,7 +470,6 @@
               ipsa vitae a nam harum illum architecto aspernatur consequatur blanditiis commodi id nulla odio asperiores.</p>
           </div>
 
-
         </div>
         <div id="chatbox1" class="no-gutter container-fluid chat-box">
           <textarea>Message</textarea>
@@ -235,69 +480,71 @@
     </div>
   </div>
 
-        <!--Side Bar-->
-        <div id="sidebar-container"class="contanr no-gutter side-bar col-12">
+  <!--Side Bar-->
+  <div id="sidebar-container" class="contanr no-gutter side-bar col-12">
 
-          <div id="sidebar-header"class="no-gutter ">
-            <div style="padding: 8px 8px 9px 8px;" class="chat info">
-              <i style="padding: 16px 8px;"class="backbtn fas fa-arrow-left"></i>
-              <div class="contact-dp"></div>
-              <p style="padding-left: 8px;">Contact Name</p>
-            </div>
-          </div>
-  
-          <div id="sidebar" class="no-gutter chat-area chat-display">
-            <div class="recieved chat">
-              <div class="contact-dp"></div>
-              <p class="message">Hello There</p>
-            </div>
-  
-            <div class="sent chat">
-              <div class="contact-dp"></div>
-              <p class="message">Hello, Whats up?</p>
-            </div>
-  
-            <div class="ml-auto recieved chat">
-              <div class="contact-dp"></div>
-              <p class="message">Hello There</p>
-            </div>
-  
-            <div class="recieved chat">
-              <div class="contact-dp"></div>
-              <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat impedit, aut mollitia quisquam, voluptas tempore
-                ipsa, sint officia recusandae iure ab dignissimos. Doloremque repudiandae quod, sint velit enim repellendus
-                maiores.
-              </p>
-            </div>
-  
-            <div class="sent chat">
-              <div class="contact-dp"></div>
-              <p class="message">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga provident vero quam perspiciatis, eligendi, nemo
-                ipsa vitae a nam harum illum architecto aspernatur consequatur blanditiis commodi id nulla odio asperiores.</p>
-            </div>
-  
-            <div class="recieved chat">
-              <div class="contact-dp"></div>
-              <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat impedit, aut mollitia quisquam, voluptas tempore
-                ipsa, sint officia recusandae iure ab dignissimos. Doloremque repudiandae quod, sint velit enim repellendus
-                maiores.
-              </p>
-            </div>
-            <div class="sent chat">
-              <div class="contact-dp"></div>
-              <p class="message">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga provident vero quam perspiciatis, eligendi, nemo
-                ipsa vitae a nam harum illum architecto aspernatur consequatur blanditiis commodi id nulla odio asperiores.</p>
-            </div>
-  
-  
-          </div>
-          <div id="chatbox" class="no-gutter container-fluid chat-box">
-            <textarea>Message</textarea>
-            <div class="button">Send</div>
-          </div>
-        </div>
-  
+    <div id="sidebar-header" class="no-gutter ">
+      <div style="padding: 8px 8px 8px 8px;" class="chat info">
+        <i style="padding: 16px 8px;" class="backbtn fas fa-arrow-left"></i>
+        <div class="contact-dp"></div>
+        <p style="padding-left: 8px;">
+          <strong>Contact Name
+            <br>
+            <span style="font-weight: normal; font-size: 0.7em;">last seen today at 12:16 PM</span>
+          </strong>
+        </p>
       </div>
+    </div>
+
+    <div id="sidebar" class="no-gutter chat-area chat-display">
+      <div class="recieved chat">
+        <div class="contact-dp"></div>
+        <p class="message">Hello There</p>
+      </div>
+
+      <div class="sent chat">
+        <div class="contact-dp"></div>
+        <p class="message">Hello, Whats up?</p>
+      </div>
+
+      <div class="ml-auto recieved chat">
+        <div class="contact-dp"></div>
+        <p class="message">Hello There</p>
+      </div>
+
+      <div class="recieved chat">
+        <div class="contact-dp"></div>
+        <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat impedit, aut mollitia quisquam, voluptas tempore
+          ipsa, sint officia recusandae iure ab dignissimos. Doloremque repudiandae quod, sint velit enim repellendus maiores.
+        </p>
+      </div>
+
+      <div class="sent chat">
+        <div class="contact-dp"></div>
+        <p class="message">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga provident vero quam perspiciatis, eligendi, nemo ipsa
+          vitae a nam harum illum architecto aspernatur consequatur blanditiis commodi id nulla odio asperiores.</p>
+      </div>
+
+      <div class="recieved chat">
+        <div class="contact-dp"></div>
+        <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat impedit, aut mollitia quisquam, voluptas tempore
+          ipsa, sint officia recusandae iure ab dignissimos. Doloremque repudiandae quod, sint velit enim repellendus maiores.
+        </p>
+      </div>
+      <div class="sent chat">
+        <div class="contact-dp"></div>
+        <p class="message">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga provident vero quam perspiciatis, eligendi, nemo ipsa
+          vitae a nam harum illum architecto aspernatur consequatur blanditiis commodi id nulla odio asperiores.</p>
+      </div>
+
+    </div>
+    <div id="chatbox" class="no-gutter container-fluid chat-box">
+      <textarea>Message</textarea>
+      <div class="button">Send</div>
+    </div>
+  </div>
+
+  </div>
   </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -307,7 +554,7 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
-    <script type="text/JavaScript" src="script.js"></script>
+  <script type="text/JavaScript" src="script.js"></script>
 </body>
 
 </html>
