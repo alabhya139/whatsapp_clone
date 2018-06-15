@@ -4,6 +4,7 @@
 
 :root{
     font-family: Helvetica, Arial, sans-serif;
+    font-weight: bolder;
 }
 
 body,html{
@@ -209,6 +210,7 @@ div{
     padding: 8px;
     background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
     background-blend-mode: screen;
+    height: 60px;
   }
 textarea{
       border-color: white;
@@ -245,8 +247,12 @@ textarea:focus{
   }
 
   #home{
-      height: 50%;
+      height: 70%;
       background: url("image/whatsapp-clone.png") no-repeat center;
       opacity: 0.3;
       background-size: 300px 300px;
+  }
+
+  .backbtn:hover{
+      cursor: pointer;
   }

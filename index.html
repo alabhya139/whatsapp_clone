@@ -9,8 +9,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
   <title>WhatsApp</title>
 </head>
 
@@ -19,7 +19,7 @@
   <div class="height container-fluid no-gutter">
     <div class="row">
       <!--Chat Bar-->
-      <div style="height: 100vh;" class="no-gutter chat-bar col-12 col-md-6 col-lg-5 col-xl-4">
+      <div id="chatbar" style="height: 100vh;" class="no-gutter chat-bar col-12 col-md-6 col-lg-5 col-xl-4">
 
         <!--Nav Bar-->
         <nav class="navbar navbar-expand-xs navbar-dark bg-dark">
@@ -40,12 +40,13 @@
         <!--Home Page-->
         <div id="home" class="text-center home-page container-fluid">
             <div class="row">
+              USE 
               
             </div>
           </div>
 
         <!--Profile Page-->
-        <div id="#profilic" style="padding-right: 0;"class="profile container-fluid">
+        <div id="#profil" style="padding-right: 0;"class="profile container-fluid">
             <div style="position:relative;padding-top:40px;">
                 <img src="image/whatsapp-dp.png" class=" mx-auto d-block" style="border-radius: 50%; height:180px;" alt="">
                 <div class="" style="border-radius: 50%;height:50px;width:50px;background-color:#128C7E;position:absolute;bottom:0px;left:59%;cursor:pointer">
@@ -170,16 +171,17 @@
       </div>
 
       <!--Side Bar-->
-      <div class="contanr no-gutter side-bar d-none d-md-block col-0 col-md-6 col-lg-7 col-xl-8">
+      <div id="sidebar-container1"class="contanr no-gutter side-bar col-0 col-md-6 col-lg-7 col-xl-8">
 
-        <div id="sidebar-header"class="no-gutter ">
-          <div style="padding: 8px 8px 9px 8px;" class="chat info">
+        <div id="sidebar-header1"class="no-gutter ">
+          <div style="padding: 8px 8px 9px 8px;" class="chat info d-flex flex-row">
+            <i id="back-button" style="padding: 16px 8px;"class="backbtn fas fa-arrow-left"></i>
             <div class="contact-dp"></div>
             <p style="padding-left: 8px;">Contact Name</p>
           </div>
         </div>
 
-        <div id="sidebar" class="no-gutter chat-area chat-display">
+        <div id="sidebar1" class="no-gutter chat-area chat-display">
           <div class="recieved chat">
             <div class="contact-dp"></div>
             <p class="message">Hello There</p>
@@ -224,7 +226,7 @@
 
 
         </div>
-        <div id="chatbox" class="no-gutter container-fluid chat-box">
+        <div id="chatbox1" class="no-gutter container-fluid chat-box">
           <textarea>Message</textarea>
           <div class="button">Send</div>
         </div>
@@ -232,6 +234,70 @@
 
     </div>
   </div>
+
+        <!--Side Bar-->
+        <div id="sidebar-container"class="contanr no-gutter side-bar col-12">
+
+          <div id="sidebar-header"class="no-gutter ">
+            <div style="padding: 8px 8px 9px 8px;" class="chat info">
+              <i style="padding: 16px 8px;"class="backbtn fas fa-arrow-left"></i>
+              <div class="contact-dp"></div>
+              <p style="padding-left: 8px;">Contact Name</p>
+            </div>
+          </div>
+  
+          <div id="sidebar" class="no-gutter chat-area chat-display">
+            <div class="recieved chat">
+              <div class="contact-dp"></div>
+              <p class="message">Hello There</p>
+            </div>
+  
+            <div class="sent chat">
+              <div class="contact-dp"></div>
+              <p class="message">Hello, Whats up?</p>
+            </div>
+  
+            <div class="ml-auto recieved chat">
+              <div class="contact-dp"></div>
+              <p class="message">Hello There</p>
+            </div>
+  
+            <div class="recieved chat">
+              <div class="contact-dp"></div>
+              <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat impedit, aut mollitia quisquam, voluptas tempore
+                ipsa, sint officia recusandae iure ab dignissimos. Doloremque repudiandae quod, sint velit enim repellendus
+                maiores.
+              </p>
+            </div>
+  
+            <div class="sent chat">
+              <div class="contact-dp"></div>
+              <p class="message">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga provident vero quam perspiciatis, eligendi, nemo
+                ipsa vitae a nam harum illum architecto aspernatur consequatur blanditiis commodi id nulla odio asperiores.</p>
+            </div>
+  
+            <div class="recieved chat">
+              <div class="contact-dp"></div>
+              <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat impedit, aut mollitia quisquam, voluptas tempore
+                ipsa, sint officia recusandae iure ab dignissimos. Doloremque repudiandae quod, sint velit enim repellendus
+                maiores.
+              </p>
+            </div>
+            <div class="sent chat">
+              <div class="contact-dp"></div>
+              <p class="message">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga provident vero quam perspiciatis, eligendi, nemo
+                ipsa vitae a nam harum illum architecto aspernatur consequatur blanditiis commodi id nulla odio asperiores.</p>
+            </div>
+  
+  
+          </div>
+          <div id="chatbox" class="no-gutter container-fluid chat-box">
+            <textarea>Message</textarea>
+            <div class="button">Send</div>
+          </div>
+        </div>
+  
+      </div>
   </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
